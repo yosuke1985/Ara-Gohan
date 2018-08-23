@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Ara!-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="Ara_Gohan" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VYe-8j-Pt3"/>
+                    <navigationItem key="navigationItem" title="Ara!" id="VYe-8j-Pt3"/>
                     <connections>
                         <outlet property="tableView" destination="Clw-rA-rWZ" id="XU1-Ql-4wK"/>
                         <segue destination="oft-3S-zDT" kind="show" identifier="detail" id="KCT-jc-maa"/>
@@ -42,7 +42,7 @@
             </objects>
             <point key="canvasLocation" x="1688.8" y="-320.68965517241384"/>
         </scene>
-        <!--Restaurant Info View Controller-->
+        <!--Title-->
         <scene sceneID="XDK-Wn-Aj6">
             <objects>
                 <viewController id="oft-3S-zDT" customClass="RestaurantInfoViewController" customModule="Ara_Gohan" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,7 +64,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JZV-JX-eoP"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="eQQ-c9-vq4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3nB-DN-Vbn">
+                            <connections>
+                                <action selector="addButton:" destination="oft-3S-zDT" id="irL-6G-6qd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="addButton" destination="3nB-DN-Vbn" id="pfW-1y-VVl"/>
                         <outlet property="tableView" destination="dD2-L2-sHB" id="hJX-qe-QPU"/>
                     </connections>
                 </viewController>
@@ -94,14 +102,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" selectedImage="heart.png" systemItem="favorites" id="cPa-gy-q4n" userLabel="Favorite"/>
+                    <navigationItem key="navigationItem" id="zdD-Cf-QpB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="74s-qc-ZG3">
+                            <connections>
+                                <action selector="editAction:" destination="8rJ-Kc-sve" id="Zec-UX-kfb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="A5L-ke-AeD" id="Mh2-uy-ZzH"/>
+                        <segue destination="oft-3S-zDT" kind="show" identifier="detail" id="mmG-bd-XQM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+            <point key="canvasLocation" x="1688.8" y="359.37031484257875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -114,7 +129,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="kuY-NN-FTp" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="eiG-1B-erT" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -140,9 +155,31 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Va-5A-dQ9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eiG-1B-erT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" selectedImage="heart.png" systemItem="favorites" id="cPa-gy-q4n" userLabel="Favorite"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fy2-1Y-M29">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="jp3-OR-kZG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Abo-7M-KkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="heart.png" width="200" height="200"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mmG-bd-XQM"/>
+    </inferredMetricsTieBreakers>
 </document>
