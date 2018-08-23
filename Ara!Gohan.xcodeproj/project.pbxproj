@@ -11,12 +11,19 @@
 		3321181C212D1E17002DF050 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3321181B212D1E17002DF050 /* HomeViewController.swift */; };
 		3321181E212D1E17002DF050 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3321181D212D1E17002DF050 /* FavoriteViewController.swift */; };
 		33211821212D1E17002DF050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3321181F212D1E17002DF050 /* Main.storyboard */; };
-		33211823212D1E19002DF050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33211822212D1E19002DF050 /* Assets.xcassets */; };
 		33211826212D1E19002DF050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33211824212D1E19002DF050 /* LaunchScreen.storyboard */; };
 		33211831212D1E19002DF050 /* Ara_GohanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33211830212D1E19002DF050 /* Ara_GohanTests.swift */; };
 		3321183C212D1E19002DF050 /* Ara_GohanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3321183B212D1E19002DF050 /* Ara_GohanUITests.swift */; };
 		3321184B212D21CB002DF050 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33211849212D21CB002DF050 /* MapTableViewCell.swift */; };
 		3321184C212D21CB002DF050 /* MapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3321184A212D21CB002DF050 /* MapTableViewCell.xib */; };
+		33DE1E7E212E8A9A00B6E9C3 /* RestaurantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1E7D212E8A9A00B6E9C3 /* RestaurantInfoViewController.swift */; };
+		33DE1E83212E8E8000B6E9C3 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DE1E82212E8E8000B6E9C3 /* heart.png */; };
+		33DE1E85212E8F1400B6E9C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DE1E84212E8F1400B6E9C3 /* Assets.xcassets */; };
+		33DE1E88212E9B5C00B6E9C3 /* RestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1E86212E9B5C00B6E9C3 /* RestaurantListTableViewCell.swift */; };
+		33DE1E89212E9B5C00B6E9C3 /* RestaurantListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DE1E87212E9B5C00B6E9C3 /* RestaurantListTableViewCell.xib */; };
+		5BAE44416E20527E3B501F22 /* Pods_Ara_GohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DBF85C1AD8DD53A52A825 /* Pods_Ara_GohanUITests.framework */; };
+		93BDCB8F5CD824C6A3396E30 /* Pods_Ara_Gohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB327D842DDF24D90F3C4B0 /* Pods_Ara_Gohan.framework */; };
+		BFA1A28957EC9DC7D89EDA8B /* Pods_Ara_GohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E46779EF5FF1589305C43B8 /* Pods_Ara_GohanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		152DBF85C1AD8DD53A52A825 /* Pods_Ara_GohanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ara_GohanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15642C3BCCA89EB9015C6180 /* Pods-Ara!GohanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ara!GohanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ara!GohanTests/Pods-Ara!GohanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FD210613E4FD428BCF02572 /* Pods-Ara!Gohan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ara!Gohan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ara!Gohan/Pods-Ara!Gohan.release.xcconfig"; sourceTree = "<group>"; };
+		2CB327D842DDF24D90F3C4B0 /* Pods_Ara_Gohan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ara_Gohan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33211816212D1E17002DF050 /* Ara!Gohan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ara!Gohan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33211819212D1E17002DF050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3321181B212D1E17002DF050 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3321181D212D1E17002DF050 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		33211820212D1E17002DF050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		33211822212D1E19002DF050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33211825212D1E19002DF050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33211827212D1E19002DF050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3321182C212D1E19002DF050 /* Ara!GohanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ara!GohanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +63,16 @@
 		3321183D212D1E19002DF050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33211849212D21CB002DF050 /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 		3321184A212D21CB002DF050 /* MapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapTableViewCell.xib; sourceTree = "<group>"; };
+		33DE1E7D212E8A9A00B6E9C3 /* RestaurantInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoViewController.swift; sourceTree = "<group>"; };
+		33DE1E82212E8E8000B6E9C3 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		33DE1E84212E8F1400B6E9C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33DE1E86212E9B5C00B6E9C3 /* RestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewCell.swift; sourceTree = "<group>"; };
+		33DE1E87212E9B5C00B6E9C3 /* RestaurantListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantListTableViewCell.xib; sourceTree = "<group>"; };
+		4372D66DCE2B8585091FC397 /* Pods-Ara!GohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ara!GohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ara!GohanTests/Pods-Ara!GohanTests.release.xcconfig"; sourceTree = "<group>"; };
+		9E46779EF5FF1589305C43B8 /* Pods_Ara_GohanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ara_GohanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C946DD2ABFCFF13900AECB70 /* Pods-Ara!GohanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ara!GohanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ara!GohanUITests/Pods-Ara!GohanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB9080F6F45A9562FD7F243C /* Pods-Ara!GohanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ara!GohanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ara!GohanUITests/Pods-Ara!GohanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4929379B35775863A6E526D /* Pods-Ara!Gohan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ara!Gohan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ara!Gohan/Pods-Ara!Gohan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93BDCB8F5CD824C6A3396E30 /* Pods_Ara_Gohan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA1A28957EC9DC7D89EDA8B /* Pods_Ara_GohanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAE44416E20527E3B501F22 /* Pods_Ara_GohanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +110,8 @@
 				3321182F212D1E19002DF050 /* Ara!GohanTests */,
 				3321183A212D1E19002DF050 /* Ara!GohanUITests */,
 				33211817212D1E17002DF050 /* Products */,
+				A83A3FC0DAA421D177D4BA19 /* Pods */,
+				681CBE9966EC9E5E2FEC1542 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,11 +129,12 @@
 			isa = PBXGroup;
 			children = (
 				33211819212D1E17002DF050 /* AppDelegate.swift */,
-				3321181B212D1E17002DF050 /* HomeViewController.swift */,
 				3321184D212D21D5002DF050 /* CustomCell */,
+				33DE1E7F212E8ABA00B6E9C3 /* HomeTab */,
 				3321181D212D1E17002DF050 /* FavoriteViewController.swift */,
 				3321181F212D1E17002DF050 /* Main.storyboard */,
-				33211822212D1E19002DF050 /* Assets.xcassets */,
+				33DE1E84212E8F1400B6E9C3 /* Assets.xcassets */,
+				33DE1E82212E8E8000B6E9C3 /* heart.png */,
 				33211824212D1E19002DF050 /* LaunchScreen.storyboard */,
 				33211827212D1E19002DF050 /* Info.plist */,
 			);
@@ -138,8 +164,42 @@
 			children = (
 				33211849212D21CB002DF050 /* MapTableViewCell.swift */,
 				3321184A212D21CB002DF050 /* MapTableViewCell.xib */,
+				33DE1E86212E9B5C00B6E9C3 /* RestaurantListTableViewCell.swift */,
+				33DE1E87212E9B5C00B6E9C3 /* RestaurantListTableViewCell.xib */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		33DE1E7F212E8ABA00B6E9C3 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				3321181B212D1E17002DF050 /* HomeViewController.swift */,
+				33DE1E7D212E8A9A00B6E9C3 /* RestaurantInfoViewController.swift */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		681CBE9966EC9E5E2FEC1542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CB327D842DDF24D90F3C4B0 /* Pods_Ara_Gohan.framework */,
+				9E46779EF5FF1589305C43B8 /* Pods_Ara_GohanTests.framework */,
+				152DBF85C1AD8DD53A52A825 /* Pods_Ara_GohanUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A83A3FC0DAA421D177D4BA19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4929379B35775863A6E526D /* Pods-Ara!Gohan.debug.xcconfig */,
+				1FD210613E4FD428BCF02572 /* Pods-Ara!Gohan.release.xcconfig */,
+				15642C3BCCA89EB9015C6180 /* Pods-Ara!GohanTests.debug.xcconfig */,
+				4372D66DCE2B8585091FC397 /* Pods-Ara!GohanTests.release.xcconfig */,
+				CB9080F6F45A9562FD7F243C /* Pods-Ara!GohanUITests.debug.xcconfig */,
+				C946DD2ABFCFF13900AECB70 /* Pods-Ara!GohanUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33211840212D1E19002DF050 /* Build configuration list for PBXNativeTarget "Ara!Gohan" */;
 			buildPhases = (
+				E814B6E9B93BB58A9CC08FE0 /* [CP] Check Pods Manifest.lock */,
 				33211812212D1E17002DF050 /* Sources */,
 				33211813212D1E17002DF050 /* Frameworks */,
 				33211814212D1E17002DF050 /* Resources */,
@@ -166,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33211843212D1E19002DF050 /* Build configuration list for PBXNativeTarget "Ara!GohanTests" */;
 			buildPhases = (
+				947F8B116A0B41EB93353A28 /* [CP] Check Pods Manifest.lock */,
 				33211828212D1E19002DF050 /* Sources */,
 				33211829212D1E19002DF050 /* Frameworks */,
 				3321182A212D1E19002DF050 /* Resources */,
@@ -184,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33211846212D1E19002DF050 /* Build configuration list for PBXNativeTarget "Ara!GohanUITests" */;
 			buildPhases = (
+				BA5A596BD1F50CFACCFC69F2 /* [CP] Check Pods Manifest.lock */,
 				33211833212D1E19002DF050 /* Sources */,
 				33211834212D1E19002DF050 /* Frameworks */,
 				33211835212D1E19002DF050 /* Resources */,
@@ -246,10 +309,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DE1E89212E9B5C00B6E9C3 /* RestaurantListTableViewCell.xib in Resources */,
+				33DE1E83212E8E8000B6E9C3 /* heart.png in Resources */,
 				33211826212D1E19002DF050 /* LaunchScreen.storyboard in Resources */,
-				33211823212D1E19002DF050 /* Assets.xcassets in Resources */,
 				3321184C212D21CB002DF050 /* MapTableViewCell.xib in Resources */,
 				33211821212D1E17002DF050 /* Main.storyboard in Resources */,
+				33DE1E85212E8F1400B6E9C3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +334,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		947F8B116A0B41EB93353A28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ara!GohanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA5A596BD1F50CFACCFC69F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ara!GohanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E814B6E9B93BB58A9CC08FE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ara!Gohan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		33211812212D1E17002DF050 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DE1E7E212E8A9A00B6E9C3 /* RestaurantInfoViewController.swift in Sources */,
 				3321181E212D1E17002DF050 /* FavoriteViewController.swift in Sources */,
+				33DE1E88212E9B5C00B6E9C3 /* RestaurantListTableViewCell.swift in Sources */,
 				3321181A212D1E17002DF050 /* AppDelegate.swift in Sources */,
 				3321184B212D21CB002DF050 /* MapTableViewCell.swift in Sources */,
 				3321181C212D1E17002DF050 /* HomeViewController.swift in Sources */,
@@ -448,6 +572,7 @@
 		};
 		33211841212D1E19002DF050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4929379B35775863A6E526D /* Pods-Ara!Gohan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +590,7 @@
 		};
 		33211842212D1E19002DF050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD210613E4FD428BCF02572 /* Pods-Ara!Gohan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +608,7 @@
 		};
 		33211844212D1E19002DF050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15642C3BCCA89EB9015C6180 /* Pods-Ara!GohanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +629,7 @@
 		};
 		33211845212D1E19002DF050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4372D66DCE2B8585091FC397 /* Pods-Ara!GohanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +650,7 @@
 		};
 		33211847212D1E19002DF050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9080F6F45A9562FD7F243C /* Pods-Ara!GohanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +670,7 @@
 		};
 		33211848212D1E19002DF050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C946DD2ABFCFF13900AECB70 /* Pods-Ara!GohanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
