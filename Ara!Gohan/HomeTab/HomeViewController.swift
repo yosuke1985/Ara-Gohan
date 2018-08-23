@@ -44,6 +44,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 11
 
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row != 0{
+            performSegue(withIdentifier: "detail", sender: nil)
+        }else{
+            return
+        }
+    }
 
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -60,6 +69,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
 
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "detail") {
+            //            let vc2: SecondViewController = (segue.destination as? SecondViewController)!
+            // ViewControllerのtextVC2にメッセージを設定
+            //            vc2.textVC2 = "to VC2"
+        }
+    }
+    
     
 
 }

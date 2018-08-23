@@ -21,6 +21,8 @@
 		33DE1E85212E8F1400B6E9C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DE1E84212E8F1400B6E9C3 /* Assets.xcassets */; };
 		33DE1E88212E9B5C00B6E9C3 /* RestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1E86212E9B5C00B6E9C3 /* RestaurantListTableViewCell.swift */; };
 		33DE1E89212E9B5C00B6E9C3 /* RestaurantListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33DE1E87212E9B5C00B6E9C3 /* RestaurantListTableViewCell.xib */; };
+		33DE1E8D212E9FC200B6E9C3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1E8C212E9FC100B6E9C3 /* Model.swift */; };
+		33DE1E8F212EA05200B6E9C3 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1E8E212EA05200B6E9C3 /* Realm.swift */; };
 		5BAE44416E20527E3B501F22 /* Pods_Ara_GohanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152DBF85C1AD8DD53A52A825 /* Pods_Ara_GohanUITests.framework */; };
 		93BDCB8F5CD824C6A3396E30 /* Pods_Ara_Gohan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB327D842DDF24D90F3C4B0 /* Pods_Ara_Gohan.framework */; };
 		BFA1A28957EC9DC7D89EDA8B /* Pods_Ara_GohanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E46779EF5FF1589305C43B8 /* Pods_Ara_GohanTests.framework */; };
@@ -68,6 +70,8 @@
 		33DE1E84212E8F1400B6E9C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33DE1E86212E9B5C00B6E9C3 /* RestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListTableViewCell.swift; sourceTree = "<group>"; };
 		33DE1E87212E9B5C00B6E9C3 /* RestaurantListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantListTableViewCell.xib; sourceTree = "<group>"; };
+		33DE1E8C212E9FC100B6E9C3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		33DE1E8E212EA05200B6E9C3 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		4372D66DCE2B8585091FC397 /* Pods-Ara!GohanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ara!GohanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ara!GohanTests/Pods-Ara!GohanTests.release.xcconfig"; sourceTree = "<group>"; };
 		9E46779EF5FF1589305C43B8 /* Pods_Ara_GohanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ara_GohanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C946DD2ABFCFF13900AECB70 /* Pods-Ara!GohanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ara!GohanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ara!GohanUITests/Pods-Ara!GohanUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				33211819212D1E17002DF050 /* AppDelegate.swift */,
+				33DE1E8E212EA05200B6E9C3 /* Realm.swift */,
+				33DE1E8C212E9FC100B6E9C3 /* Model.swift */,
 				3321184D212D21D5002DF050 /* CustomCell */,
 				33DE1E7F212E8ABA00B6E9C3 /* HomeTab */,
 				3321181D212D1E17002DF050 /* FavoriteViewController.swift */,
@@ -446,12 +452,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DE1E8D212E9FC200B6E9C3 /* Model.swift in Sources */,
 				33DE1E7E212E8A9A00B6E9C3 /* RestaurantInfoViewController.swift in Sources */,
 				3321181E212D1E17002DF050 /* FavoriteViewController.swift in Sources */,
 				33DE1E88212E9B5C00B6E9C3 /* RestaurantListTableViewCell.swift in Sources */,
 				3321181A212D1E17002DF050 /* AppDelegate.swift in Sources */,
 				3321184B212D21CB002DF050 /* MapTableViewCell.swift in Sources */,
 				3321181C212D1E17002DF050 /* HomeViewController.swift in Sources */,
+				33DE1E8F212EA05200B6E9C3 /* Realm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
