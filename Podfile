@@ -7,6 +7,13 @@ target 'Ara!Gohan' do
 #  pod 'FontAwesome.swift'
 
   # Pods for Ara!Gohan
+  pod 'RealmSwift'
+  pod 'SwiftLocation', '~> 3.1.0'
+  pod 'Font-Awesome-Swift', '~> 1.7.2'
+  pod 'SwiftyJSON'
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
 
   target 'Ara!GohanTests' do
     inherit! :search_paths

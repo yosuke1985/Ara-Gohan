@@ -1,3 +1,54 @@
-PODFILE CHECKSUM: 9365d232ea46a5aea9160f40b203d27b3c150cdf
+PODS:
+  - Font-Awesome-Swift (1.7.2)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.7.0):
+    - GoogleMaps (= 2.7.0)
+    - GooglePlaces (= 2.7.0)
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
+  - Realm (3.7.6):
+    - Realm/Headers (= 3.7.6)
+  - Realm/Headers (3.7.6)
+  - RealmSwift (3.7.6):
+    - Realm (= 3.7.6)
+  - SwiftLocation (3.1.0):
+    - SwiftyJSON (~> 4.0.0-alpha.1)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Font-Awesome-Swift (~> 1.7.2)
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - RealmSwift
+  - SwiftLocation (~> 3.1.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Font-Awesome-Swift
+    - GoogleMaps
+    - GooglePlacePicker
+    - GooglePlaces
+    - Realm
+    - RealmSwift
+    - SwiftLocation
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Font-Awesome-Swift: 83ab9db365379ee6025167cec67bdc5d3226a811
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlacePicker: 59ea44db173c58486ad6123993e81feefcbce9c3
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
+  RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
+  SwiftLocation: 8f5ef4f510a45e43239de57a3145b3669301e898
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 03c04adcac1f86f0ef3b45a6ea676c2b9165fd56
 
 COCOAPODS: 1.5.3
