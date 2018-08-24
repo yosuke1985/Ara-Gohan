@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         LocationService.sharedInstance.startUpdatingLocation()
+        GMSPlacesClient.provideAPIKey("AIzaSyC132Yiz9lwdQYc91HKAXDEIM3As-RvHms")
+//        GMSServices.provideAPIKey("AIzaSyC132Yiz9lwdQYc91HKAXDEIM3As-RvHms")
 
         realm()
 

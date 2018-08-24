@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import CoreLocation
+import MapKit
 
 
 class LocationService: NSObject, CLLocationManagerDelegate{
@@ -84,6 +85,39 @@ class LocationService: NSObject, CLLocationManagerDelegate{
     
     func notifiyDidUpdateLocation(newLocation:CLLocation){
         NotificationCenter.default.post(name: Notification.Name(rawValue:"didUpdateLocation"), object: nil, userInfo: ["location" : newLocation])
+    }
+    
+    func search(query: String, withRegion region: MKCoordinateRegion?){
+        let request = MKLocalSearchRequest()
+        request.naturalLanguageQuery = query
+        
+        if let region = region {
+            request.region = region
+        }
+        
+        
+        MKLocalSearch(request: request).start(completionHandler: {(response, error) in
+            // Error
+            if error != nil {
+                return
+            }
+            
+            // Success
+            guard let data = response?.mapItems, data.isEmpty == false else { return }
+            
+            data.forEach {
+                if let name = $0.name {
+                    // Name
+                    print("name : \(name)")
+                    
+                    // Coordinate
+                    print("coordinate : \($0.placemark.coordinate.latitude), \($0.placemark.coordinate.longitude)")
+                    
+                    // Address(Computed)
+                    print("address : \($0.placemark.address)")
+                }
+            }
+        } )
     }
     
 }

@@ -9,6 +9,13 @@
 import UIKit
 import MapKit
 
+extension MKPlacemark {
+    var address: String {
+        let components = [self.administrativeArea, self.locality, self.thoroughfare, self.subThoroughfare]
+        return components.flatMap { $0 }.joined(separator: "")
+    }
+}
+
 
 class MapTableViewCell: UITableViewCell{
 
@@ -48,6 +55,11 @@ class MapTableViewCell: UITableViewCell{
 //        NotificationCenter.default.addObserver(self, selector: #selector(FirstViewController.updateMap(_:)), name: Notification.Name(rawValue:"didUpdateLocation"), object: nil)
 //        NotificationCenter.default.addObserver(self, selector: #selector(FirstViewController.showTurnOnLocationServiceAlert(_:)), name: Notification.Name(rawValue:"showTurnOnLocationServiceAlert"), object: nil)
 //
+        
+        let coordinate = CLLocationCoordinate2DMake(appDelegate.myLocation.coordinate.latitude, appDelegate.myLocation.coordinate.longitude) // 現在地
+        let region = MKCoordinateRegionMakeWithDistance(coordinate, 1000.0, 1000.0) // 1km * 1km
+        LocationService().search(query: "レストラン", withRegion: region)
+        
         
         
     }
@@ -179,5 +191,9 @@ class MapTableViewCell: UITableViewCell{
             })
         }
     }
+    
+    
+
+    
     
 }
