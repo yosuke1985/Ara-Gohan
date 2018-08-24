@@ -50,7 +50,7 @@ class MapTableViewCell: UITableViewCell{
         
         self.didInitialZoom = false
         
-        let coordinate = CLLocationCoordinate2DMake(35.690553, 139.699579) // 現在地
+        let coordinate = CLLocationCoordinate2DMake(35.6586189, 139.7019523) // 現在地
         let region = MKCoordinateRegionMakeWithDistance(coordinate, 1000.0, 1000.0) // 1km * 1km
         
         //中心座標と表示範囲をマップに登録する。

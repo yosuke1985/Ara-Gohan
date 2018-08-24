@@ -29,7 +29,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.register(UINib(nibName: "MapTableViewCell", bundle: nil), forCellReuseIdentifier: "map")
         self.tableView.register(UINib(nibName: "RestaurantListTableViewCell", bundle: nil), forCellReuseIdentifier: "list")
         self.manager.requestAlwaysAuthorization()
-        restaurantList.append("yeah")
 
         update()
 
