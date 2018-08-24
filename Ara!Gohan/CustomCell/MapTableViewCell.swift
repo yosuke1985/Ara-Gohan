@@ -41,7 +41,6 @@ class MapTableViewCell: UITableViewCell{
         mapView.userTrackingMode = MKUserTrackingMode.follow
         mapView.userTrackingMode = MKUserTrackingMode.followWithHeading
         self.userAnnotationImage = UIImage(named: "user_position_ball")!
-        
         //        mapView.setRegion(,animated:true)
         
         
@@ -51,14 +50,12 @@ class MapTableViewCell: UITableViewCell{
         
         self.didInitialZoom = false
         
-//
-//        NotificationCenter.default.addObserver(self, selector: #selector(FirstViewController.updateMap(_:)), name: Notification.Name(rawValue:"didUpdateLocation"), object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(FirstViewController.showTurnOnLocationServiceAlert(_:)), name: Notification.Name(rawValue:"showTurnOnLocationServiceAlert"), object: nil)
-//
-        
-        let coordinate = CLLocationCoordinate2DMake(appDelegate.myLocation.coordinate.latitude, appDelegate.myLocation.coordinate.longitude) // 現在地
+        let coordinate = CLLocationCoordinate2DMake(35.690553, 139.699579) // 現在地
         let region = MKCoordinateRegionMakeWithDistance(coordinate, 1000.0, 1000.0) // 1km * 1km
-        LocationService().search(query: "レストラン", withRegion: region)
+        
+        //中心座標と表示範囲をマップに登録する。
+        mapView.setRegion(region, animated:true)
+        search(query: "foods", withRegion: region)
         
         
         
@@ -193,7 +190,55 @@ class MapTableViewCell: UITableViewCell{
     }
     
     
-
+    func search(query: String, withRegion region: MKCoordinateRegion?){
+        let request = MKLocalSearchRequest()
+        request.naturalLanguageQuery = query
+        
+        if let region = region {
+            request.region = region
+        }
+        
+        
+        MKLocalSearch(request: request).start(completionHandler: {(response, error) in
+            // Error
+            if error != nil {
+                return
+            }
+            
+            // Success
+            guard let data = response?.mapItems, data.isEmpty == false else { return }
+            
+            data.forEach {
+                if let name = $0.name {
+                    // Name
+                    print("name : \(name)")
+                    
+                    // Coordinate
+                    print("coordinate : \($0.placemark.coordinate.latitude), \($0.placemark.coordinate.longitude)")
+                    
+                    // Address(Computed)
+                    print("address : \($0.placemark.address)")
+                }
+            }
+            
+            for placemark in (response?.mapItems)! {
+                if(error == nil) {
+                    
+                    //検索された場所にピンを刺す。
+                    let annotation = MKPointAnnotation()
+                    annotation.coordinate = CLLocationCoordinate2DMake(placemark.placemark.coordinate.latitude, placemark.placemark.coordinate.longitude)
+                    annotation.title = placemark.placemark.name
+                    annotation.subtitle = placemark.placemark.title
+                    self.mapView.addAnnotation(annotation)
+                    
+                } else {
+                    //エラー
+                    print("error",error)
+                }
+            }
+            
+        } )
+    }
     
     
 }

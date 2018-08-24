@@ -11,15 +11,17 @@ import SwiftyJSON
 import RealmSwift
 import GooglePlaces
 import CoreLocation
+import MapKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
     var appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
     private let manager = CLLocationManager()
-
+    var restaurantList:[String] = []
 
     override func viewDidLoad() {
+
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.delegate = self
@@ -27,21 +29,32 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.register(UINib(nibName: "MapTableViewCell", bundle: nil), forCellReuseIdentifier: "map")
         self.tableView.register(UINib(nibName: "RestaurantListTableViewCell", bundle: nil), forCellReuseIdentifier: "list")
         self.manager.requestAlwaysAuthorization()
+        restaurantList.append("yeah")
 
         update()
+
         
         
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
     func update(){
         
         print(appDelegate.myLocation)
         
+        let coordinate = CLLocationCoordinate2DMake(35.690553, 139.699579) // 現在地
+        let region = MKCoordinateRegionMakeWithDistance(coordinate, 1000.0, 1000.0) // 1km * 1km
+        
+        //中心座標と表示範囲をマップに登録する。
+        search(query: "foods", withRegion: region)
+        print("restaurantList",restaurantList)
+
     }
     
 
@@ -85,6 +98,21 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     }
     
+//    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        switch indexPath.row {
+//        case 0:
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "map", for: indexPath) as! MapTableViewCell
+//
+//        default:
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "list", for: indexPath) as! RestaurantListTableViewCell
+//            tableView.beginUpdates()
+//            print("restaurantList",restaurantList)
+////            cell.textLabel?.text = restaurantList[indexPath.row-1]
+//            tableView.endUpdates()
+//
+//        }
+//    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "detail") {
             //            let vc2: SecondViewController = (segue.destination as? SecondViewController)!
@@ -93,7 +121,42 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-    
+    func search(query: String, withRegion region: MKCoordinateRegion?){
+        let request = MKLocalSearchRequest()
+        request.naturalLanguageQuery = query
+        
+        if let region = region {
+            request.region = region
+        }
+        
+        
+        MKLocalSearch(request: request).start(completionHandler: {(response, error) in
+            // Error
+            if error != nil {
+                return
+            }
+            
+            // Success
+            guard let data = response?.mapItems, data.isEmpty == false else { return }
+            
+            data.forEach {
+                if let name = $0.name {
+                    // Name
+                    self.restaurantList.append($0.name!)
+
+                    print("name : \(name)")
+                    
+                    // Coordinate
+                    print("coordinate : \($0.placemark.coordinate.latitude), \($0.placemark.coordinate.longitude)")
+                    
+                    // Address(Computed)
+                    print("address : \($0.placemark.address)")
+                }
+            }
+        } )
+        
+
+    }
 
 }
 
