@@ -42,7 +42,7 @@
             </objects>
             <point key="canvasLocation" x="1688.8" y="-320.68965517241384"/>
         </scene>
-        <!--Title-->
+        <!--Restaurant Info View Controller-->
         <scene sceneID="XDK-Wn-Aj6">
             <objects>
                 <viewController id="oft-3S-zDT" customClass="RestaurantInfoViewController" customModule="Ara_Gohan" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,7 +64,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JZV-JX-eoP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="eQQ-c9-vq4">
+                    <navigationItem key="navigationItem" id="eQQ-c9-vq4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3nB-DN-Vbn">
                             <connections>
                                 <action selector="addButton:" destination="oft-3S-zDT" id="irL-6G-6qd"/>
@@ -73,6 +73,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="3nB-DN-Vbn" id="pfW-1y-VVl"/>
+                        <outlet property="navi" destination="eQQ-c9-vq4" id="SSU-4u-40e"/>
                         <outlet property="tableView" destination="dD2-L2-sHB" id="hJX-qe-QPU"/>
                     </connections>
                 </viewController>

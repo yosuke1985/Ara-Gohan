@@ -12,6 +12,7 @@ import UIKit
 class RestaurantInfoViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var navi: UINavigationItem!
     
     @IBAction func addButton(_ sender: Any) {
         print("added")
@@ -24,7 +25,6 @@ class RestaurantInfoViewController: UIViewController,UITableViewDataSource,UITab
         self.tableView.register(UINib(nibName: "MapTableViewCell", bundle: nil), forCellReuseIdentifier: "map")
         self.tableView.register(UINib(nibName: "DetailTableViewCell", bundle: nil), forCellReuseIdentifier: "info")
 
-        
 
         // Do any additional setup after loading the view.
     }
