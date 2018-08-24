@@ -9,6 +9,7 @@
 import UIKit
 
 class FavoriteViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
+    var appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -59,6 +60,9 @@ class FavoriteViewController: UIViewController ,UITableViewDataSource,UITableVie
     
     @IBAction func editAction(_ sender: Any) {
         print("edit")
+        print(appDelegate.myLocation.coordinate.latitude)
+        print(appDelegate.myLocation.coordinate.longitude)
+
     }
     
 }

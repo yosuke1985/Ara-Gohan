@@ -21,9 +21,6 @@
                 <subviews>
                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7sF-a8-W2L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="195"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="320" id="a87-vN-eLE"/>
-                        </constraints>
                     </mapView>
                 </subviews>
                 <constraints>
@@ -34,6 +31,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mapView" destination="7sF-a8-W2L" id="jUX-x4-Djo"/>
+            </connections>
             <point key="canvasLocation" x="34" y="129.5"/>
         </tableViewCell>
     </objects>

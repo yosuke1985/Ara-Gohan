@@ -7,10 +7,18 @@
 //
 
 import UIKit
+import SwiftyJSON
+import RealmSwift
+import GooglePlaces
+import CoreLocation
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
+    var appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    private let manager = CLLocationManager()
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +26,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "MapTableViewCell", bundle: nil), forCellReuseIdentifier: "map")
         self.tableView.register(UINib(nibName: "RestaurantListTableViewCell", bundle: nil), forCellReuseIdentifier: "list")
+        self.manager.requestAlwaysAuthorization()
 
         update()
         
@@ -31,7 +40,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func update(){
         
-        
+        print(appDelegate.myLocation)
         
     }
     
@@ -41,7 +50,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             return 320.0
         }else{
-            
             return 100.0
         }
     }

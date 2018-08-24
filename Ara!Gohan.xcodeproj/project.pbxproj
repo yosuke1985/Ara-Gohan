@@ -16,6 +16,10 @@
 		3321183C212D1E19002DF050 /* Ara_GohanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3321183B212D1E19002DF050 /* Ara_GohanUITests.swift */; };
 		3321184B212D21CB002DF050 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33211849212D21CB002DF050 /* MapTableViewCell.swift */; };
 		3321184C212D21CB002DF050 /* MapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3321184A212D21CB002DF050 /* MapTableViewCell.xib */; };
+		3356C514212FD6A5005C5BFD /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356C513212FD6A5005C5BFD /* LocationService.swift */; };
+		3356C516212FE124005C5BFD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356C515212FE124005C5BFD /* MapKit.framework */; };
+		3356C518212FE56D005C5BFD /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356C517212FE56D005C5BFD /* UserAnnotation.swift */; };
+		3356C51A212FE61C005C5BFD /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356C519212FE61C005C5BFD /* UIColorHex.swift */; };
 		33DE1E7E212E8A9A00B6E9C3 /* RestaurantInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1E7D212E8A9A00B6E9C3 /* RestaurantInfoViewController.swift */; };
 		33DE1E83212E8E8000B6E9C3 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 33DE1E82212E8E8000B6E9C3 /* heart.png */; };
 		33DE1E85212E8F1400B6E9C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DE1E84212E8F1400B6E9C3 /* Assets.xcassets */; };
@@ -67,6 +71,10 @@
 		3321183D212D1E19002DF050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33211849212D21CB002DF050 /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 		3321184A212D21CB002DF050 /* MapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapTableViewCell.xib; sourceTree = "<group>"; };
+		3356C513212FD6A5005C5BFD /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		3356C515212FE124005C5BFD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3356C517212FE56D005C5BFD /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
+		3356C519212FE61C005C5BFD /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		33DE1E7D212E8A9A00B6E9C3 /* RestaurantInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantInfoViewController.swift; sourceTree = "<group>"; };
 		33DE1E82212E8E8000B6E9C3 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 		33DE1E84212E8F1400B6E9C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3356C516212FE124005C5BFD /* MapKit.framework in Frameworks */,
 				93BDCB8F5CD824C6A3396E30 /* Pods_Ara_Gohan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,10 +148,13 @@
 				33211819212D1E17002DF050 /* AppDelegate.swift */,
 				33DE1E8E212EA05200B6E9C3 /* Realm.swift */,
 				33DE1E8C212E9FC100B6E9C3 /* Model.swift */,
+				3356C513212FD6A5005C5BFD /* LocationService.swift */,
 				3321184D212D21D5002DF050 /* CustomCell */,
 				33DE1E7F212E8ABA00B6E9C3 /* HomeTab */,
 				3321181D212D1E17002DF050 /* FavoriteViewController.swift */,
 				3321181F212D1E17002DF050 /* Main.storyboard */,
+				3356C517212FE56D005C5BFD /* UserAnnotation.swift */,
+				3356C519212FE61C005C5BFD /* UIColorHex.swift */,
 				33DE1E84212E8F1400B6E9C3 /* Assets.xcassets */,
 				33DE1E82212E8E8000B6E9C3 /* heart.png */,
 				33211824212D1E19002DF050 /* LaunchScreen.storyboard */,
@@ -194,6 +206,7 @@
 		681CBE9966EC9E5E2FEC1542 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3356C515212FE124005C5BFD /* MapKit.framework */,
 				2CB327D842DDF24D90F3C4B0 /* Pods_Ara_Gohan.framework */,
 				9E46779EF5FF1589305C43B8 /* Pods_Ara_GohanTests.framework */,
 				152DBF85C1AD8DD53A52A825 /* Pods_Ara_GohanUITests.framework */,
@@ -287,6 +300,11 @@
 				TargetAttributes = {
 					33211815212D1E17002DF050 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3321182B212D1E19002DF050 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -461,11 +479,14 @@
 			files = (
 				33DE1E92212EA45800B6E9C3 /* DetailTableViewCell.swift in Sources */,
 				33DE1E8D212E9FC200B6E9C3 /* Model.swift in Sources */,
+				3356C514212FD6A5005C5BFD /* LocationService.swift in Sources */,
 				33DE1E7E212E8A9A00B6E9C3 /* RestaurantInfoViewController.swift in Sources */,
 				3321181E212D1E17002DF050 /* FavoriteViewController.swift in Sources */,
 				33DE1E88212E9B5C00B6E9C3 /* RestaurantListTableViewCell.swift in Sources */,
+				3356C518212FE56D005C5BFD /* UserAnnotation.swift in Sources */,
 				3321181A212D1E17002DF050 /* AppDelegate.swift in Sources */,
 				3321184B212D21CB002DF050 /* MapTableViewCell.swift in Sources */,
+				3356C51A212FE61C005C5BFD /* UIColorHex.swift in Sources */,
 				3321181C212D1E17002DF050 /* HomeViewController.swift in Sources */,
 				33DE1E8F212EA05200B6E9C3 /* Realm.swift in Sources */,
 			);
